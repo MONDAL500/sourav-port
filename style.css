@@ -1,0 +1,135 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Navigation Bar */
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(26, 46, 95);
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #333;  
+}
+
+header nav a {
+    color: #f8f9fa;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #007bff;
+}
+
+/* Hero Section */
+#home {
+    background: linear-gradient(to right, #007bff, #4c6ef5);
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 100px;
+}
+#home h5 {
+   
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 300px;
+}
+
+.cta-button:hover {
+    background-color: #cc5200;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h5{
+    color: #000;
+    font-size: 18px;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #007bff;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+/* Contact Section Styling */
+#contact p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+    #about{
+        margin-bottom: 260px;
+    }
+}
